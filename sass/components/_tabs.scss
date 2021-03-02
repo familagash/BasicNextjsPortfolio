@@ -1,0 +1,44 @@
+.tabs {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 1rem;
+    padding: 0.2rem 0.75rem;
+    &:hover {
+      cursor: context-menu;
+    }
+  }
+  &__active {
+    border-bottom: 3px solid var(--text-color);
+    cursor: context-menu;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+}
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--text-color);
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    right: 0;
+  }
+}

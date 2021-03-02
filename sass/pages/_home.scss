@@ -1,0 +1,86 @@
+.services {
+  &__container {
+    column-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  &__content {
+    text-align: center;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+  }
+  &__img {
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: var(--mb-2);
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+  }
+  &__description {
+    padding: 0 1.5rem;
+  }
+}
+.featured {
+  &__data {
+    padding: 1rem;
+  }
+  &__count {
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+  }
+  &__title {
+    font-size: var(--h1-font-size);
+    color: var(--text-color);
+    font-weight: bold;
+    margin-bottom: var(--mb-2);
+  }
+  &__description {
+    font-size: var(--h2-font-size);
+    letter-spacing: 2;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  &__link {
+    margin-top: var(--mb-2);
+    fill: var(--text-color);
+    svg {
+      margin-right: var(--mb-1);
+    }
+  }
+}
+
+
+
+/*========== APP ==========*/
+.app {
+  &__data {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: var(--mb-5);
+  }
+  &__stores {
+    margin-bottom: var(--mb-4);
+  }
+  &__store {
+    width: 120px;
+    margin: 0 var(--mb-1);
+  }
+  &__img {
+    width: 230px;
+    justify-self: center;
+  }
+}
+
+/*========== CONTACT ==========*/
+.contact {
+  &__container {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: var(--mb-3);
+  }
+}
