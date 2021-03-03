@@ -29,7 +29,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="services__content">
+            <div className="services__content ">
               <svg
                 className="services__img"
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,8 @@ export default function Home() {
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type{" "}
                 </p>
-                <div className="featured__link">
+
+                <div className="featured__link flex flex-row px-1 ">
                   <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +138,7 @@ export default function Home() {
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type{" "}
                 </p>
-                <div className="featured__link">
+                <div className="featured__link flex flex-row px-1">
                   <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +185,7 @@ export default function Home() {
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type{" "}
                 </p>
-                <div className="featured__link">
+                <div className="featured__link flex flex-row px-1">
                   <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

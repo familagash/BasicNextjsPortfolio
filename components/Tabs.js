@@ -6,36 +6,43 @@ const tabItems = [
   {
     id: 1,
     title: "IbaTech",
-    content: "step 1 content",
+    content: "Front-end Engineer",
     company: "ibatech",
     date: "December 2019",
+    desc: [
+      " Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using",
+
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+
+      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+    ],
   },
   {
     id: 2,
     title: "IBA",
-    content: "step 2 content",
+    content: "Software Developer",
     company: "iba",
     date: "December 2020",
+    desc: [
+      " Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using",
+
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+
+      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+    ],
   },
   {
     id: 3,
     title: "Freelance",
-    content: "step 3 content",
+    content: "Front-end developer & UI/UX Designer",
     company: "freelance",
-    date: "December 2017-2020",
+    date: "December 2017-2019",
     desc: [
-      {
-        case1:
-          " Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using",
-      },
-      {
-        case1:
-          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-      },
-      {
-        case1:
-          "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
-      },
+      " Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using",
+
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+
+      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
     ],
   },
 ];
@@ -44,7 +51,8 @@ const Tabs = () => {
   const [active, setActive] = useState(0);
   return (
     <div className="tabs__container bd-container section">
-      <div className="tabs__item">
+      <h2 className="section-title ">Featured Projects</h2>
+      <div className="tabs__item ">
         {tabItems.map(({ id, title }) => (
           <Tablist
             key={title}
