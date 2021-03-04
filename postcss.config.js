@@ -2,7 +2,7 @@ module.exports = {
   plugins: {
     "postcss-import": {},
     tailwindcss: {},
-    ...(process.env.NODE_ENV === "production"
+    ...(process.env.NODE_ENV.trim() == "production"
       ? {
           "@fullhuman/postcss-purgecss": {
             content: [

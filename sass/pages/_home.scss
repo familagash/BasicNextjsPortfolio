@@ -9,10 +9,11 @@
     padding: 1.5rem;
   }
   &__img {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     fill: var(--first-color);
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-3);
+    margin:0 auto;
   }
   &__title {
     font-size: var(--h3-font-size);
@@ -51,8 +52,6 @@
     }
   }
 }
-
-
 
 /*========== APP ==========*/
 .app {

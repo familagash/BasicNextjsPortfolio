@@ -1,89 +1,31 @@
 const Footer = () => {
   return (
-    <footer className="footer section bd-container">
-      <div className="footer__container bd-grid">
-        <div className="footer__content">
-          <a href="#" className="footer__logo">
-            Tasty Food
-          </a>
-          <span className="footer__description">Restaurant</span>
+    <footer className="flex justify-center px-4 text-gray-100 bg-gray-800">
+      <div className="container py-6">
+        <div className="flex flex-col items-center justify-between mt-4 md:flex-row">
           <div>
-            <a href="#" className="footer__social">
-              <i className="bx bxl-facebook"></i>
-            </a>
-            <a href="#" className="footer__social">
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" className="footer__social">
-              <i className="bx bxl-twitter"></i>
+            <a href="#" className="text-xl font-bold">
+              Logo
             </a>
           </div>
-        </div>
-
-        <div className="footer__content">
-          <h3 className="footer__title">Services</h3>
-          <ul>
-            <li>
-              <a href="#" className="footer__link">
-                Delivery
+          <div className="flex mt-4 md:m-0">
+            <div className="-mx-4">
+              <a href="#" className="px-4 text-sm">
+                About
               </a>
-            </li>
-            <li>
-              <a href="#" className="footer__link">
-                Pricing
+              <a href="#" className="px-4 text-sm">
+                Blog
               </a>
-            </li>
-            <li>
-              <a href="#" className="footer__link">
-                Fast food
+              <a href="#" className="px-4 text-sm">
+                News
               </a>
-            </li>
-            <li>
-              <a href="#" className="footer__link">
-                Reserve your spot
+              <a href="#" className="px-4 text-sm">
+                Contact
               </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="footer__content">
-          <h3 className="footer__title">Information</h3>
-          <ul>
-            <li>
-              <a href="#" className="footer__link">
-                Event
-              </a>
-            </li>
-            <li>
-              <a href="#" className="footer__link">
-                Contact us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="footer__link">
-                Privacy policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="footer__link">
-                Terms of services
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="footer__content">
-          <h3 className="footer__title">Adress</h3>
-          <ul>
-            <li>Lima - Peru</li>
-            <li>Jr Union #999</li>
-            <li>999 - 888 - 777</li>
-            <li>tastyfood@email.com</li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
-
-      <p className="footer__copy">&#169; 2020 Sweetheart. All right reserved</p>
     </footer>
   );
 };
