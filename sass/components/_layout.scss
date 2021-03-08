@@ -60,10 +60,6 @@ img {
   color: var(--first-color);
 }
 
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 .section {
   padding: 4rem 0 2rem;
 
@@ -75,9 +71,9 @@ img {
   &-title {
     font-size: var(--h1-font-size);
     color: var(--title-color);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-4);
     position: relative;
-    border-bottom: 12px;
+    padding-bottom: 0.65rem;
     &:after {
       content: "";
       background: var(--text-color);

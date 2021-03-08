@@ -1,0 +1,36 @@
+.about {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  &__img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+    position: relative;
+    padding-bottom: 0.65rem;
+    &:after {
+      content: "";
+      background: var(--text-color);
+      display: inline-block;
+      height: 2px;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      width: 3.5rem;
+    }
+  }
+  &__subtitle {
+    line-height: 1.4;
+    font-size: 1.2rem;
+  }
+}

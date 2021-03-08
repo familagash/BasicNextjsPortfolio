@@ -7,7 +7,7 @@
   align-items: center;
 
   &__menu {
-    @media screen and (max-width: 767.8px) {
+    @media screen and (max-width: 768.8px) {
       position: fixed;
       top: var(--header-height);
       left: -100%;

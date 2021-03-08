@@ -3,14 +3,12 @@
 @import "./components/nav";
 @import "./components/layout";
 @import "./components/footer";
-@import './components/responsive';
-@import './components/tabs';
+@import "./components/tabs";
 
 // Pages
 @import "./pages/home";
 @import "./pages/about";
 @import "./pages/contact";
-@import "./pages/projects";
 
 // helper functions
 @import "./helpers/function";
@@ -19,3 +17,4 @@
 
 // normalize css
 @import "./normalize";
+@import "./components/responsive";

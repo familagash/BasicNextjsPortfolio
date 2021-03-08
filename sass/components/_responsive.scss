@@ -1,13 +1,44 @@
 @media screen and (min-width: 576px) {
-  .home__container,
-  .about__container,
-  .app__container {
+  .home__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+
+  .tabs {
+    &__list {
+      flex-direction: column !important;
+    }
+  }
+  .featured {
+    &__content {
+      display: flex;
+      flex-direction: column !important;
+    }
+  }
+  .about {
+    &__img {
+      width: 350px !important;
+    }
+  }
+  .contact {
+    &__container {
+      background-color: white;
+      padding: 1rem 2rem;
+    }
+
+    &__name {
+      padding: 0.8rem 3rem;
+    }
+    &__email {
+      padding: 0.8rem 3rem;
+    }
+    &__message {
+      padding: 3rem 5rem;
+    }
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.8px) {
   body {
     margin: 0;
   }
@@ -30,15 +61,66 @@
       display: none;
     }
   }
-
-  .change-theme {
-    position: initial;
-    margin-left: var(--mb-2);
+  .tabs {
+    &__active {
+      border-bottom: 0px solid transparent !important;
+      border-left: 3px solid var(--text-color);
+    }
   }
 
   .home__container {
     height: 100vh;
     justify-items: center;
+  }
+
+  .featured {
+    &__content {
+      display: flex;
+      position: relative;
+      margin-top: 2rem;
+
+      &:nth-child(3) {
+        flex-direction: row-reverse !important;
+        .featured__data {
+          right: 200px;
+          left: 0;
+        }
+      }
+    }
+
+    &__img {
+      width: 650px;
+      height: 400px;
+    }
+    &__data {
+      position: absolute;
+      top: 40px;
+      left: 200px;
+    }
+  }
+  .about {
+    &__img {
+      width: 400px !important;
+    }
+  }
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .contact {
+    &__container {
+      background-color: white;
+      padding: 2rem 4rem;
+    }
+    &__name {
+      padding: 1rem 3rem;
+    }
+    &__email {
+      padding: 1rem 3rem;
+    }
+    &__message {
+      padding: 3.2rem 5rem;
+    }
   }
 }
 
@@ -50,5 +132,52 @@
 
   .home__img {
     width: 500px;
+  }
+  .tabs {
+    &__active {
+      border-bottom: 0px solid transparent !important;
+      border-left: 3px solid var(--text-color);
+    }
+  }
+  .about {
+    min-height: 88.9vh !important;
+    &__img {
+      width: 410px !important;
+    }
+  }
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .contact {
+    &__container {
+      padding: 3rem 4rem;
+    }
+    &__name {
+      padding: 1rem 3rem;
+    }
+    &__email {
+      padding: 1rem 3rem;
+    }
+    &__message {
+      padding: 3.2rem 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .contact {
+    &__container {
+      padding: 3rem 5rem;
+    }
+    &__name {
+      padding: 1rem 4rem;
+    }
+    &__email {
+      padding: 1rem 4rem;
+    }
+    &__message {
+      padding: 3.2rem 6rem;
+    }
   }
 }

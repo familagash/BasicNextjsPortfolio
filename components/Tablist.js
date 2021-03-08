@@ -6,8 +6,8 @@ const Tablist = ({ title, onItemClicked, isActive = true }) => {
       className={isActive ? "tabs__active" : "hvr-underline-from-left"}
       onClick={onItemClicked}
     >
-      <ul>
-        <li className="tabs__title ml-3 mr-5 text-2xl">
+      <ul className=" sm:mx-4">
+        <li className="tabs__title pl-3 pr-3 mx-2  text-xl ">
           <a>{title}</a>
         </li>
       </ul>

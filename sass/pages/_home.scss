@@ -6,14 +6,14 @@
   &__content {
     text-align: center;
     background-color: var(--container-color);
-    padding: 1.5rem;
+    padding: 2.5rem;
   }
   &__img {
     width: 60px;
     height: 60px;
     fill: var(--first-color);
     margin-bottom: var(--mb-3);
-    margin:0 auto;
+    margin: 0 auto;
   }
   &__title {
     font-size: var(--h3-font-size);
@@ -50,36 +50,5 @@
     svg {
       margin-right: var(--mb-1);
     }
-  }
-}
-
-/*========== APP ==========*/
-.app {
-  &__data {
-    text-align: center;
-  }
-  &__description {
-    margin-bottom: var(--mb-5);
-  }
-  &__stores {
-    margin-bottom: var(--mb-4);
-  }
-  &__store {
-    width: 120px;
-    margin: 0 var(--mb-1);
-  }
-  &__img {
-    width: 230px;
-    justify-self: center;
-  }
-}
-
-/*========== CONTACT ==========*/
-.contact {
-  &__container {
-    text-align: center;
-  }
-  &__description {
-    margin-bottom: var(--mb-3);
   }
 }

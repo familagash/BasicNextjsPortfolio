@@ -16,7 +16,7 @@ const Header = () => {
             </Link>
           </div>
           <img
-            src="../assets/img/featured1.png"
+            src="../assets/img/avatar.png"
             alt="showcase image "
             className="showcase__img lg:block w-100 h-100 "
           />
