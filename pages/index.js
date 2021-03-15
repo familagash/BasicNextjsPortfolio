@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Tabs from "../components/Tabs";
 import Link from "next/link";
-import { projects, services } from "../data";
+import { articles, projects, services } from "../data";
 import Article from "../components/article";
 
 // import { server } from "../config/index";
@@ -83,7 +83,11 @@ export default function Home() {
               </a>
             </Link>
           </div>
-          <Article count="3" />
+          <div className="block  space-x-3 lg:space-x-3 ">
+            <div className=" md:flex flex-wrap">
+              <Article count="4" />;
+            </div>
+          </div>
         </section>
       </main>
     </>
